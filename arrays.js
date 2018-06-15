@@ -49,6 +49,11 @@ const addRemove = (operation) =>{
             numArr.splice(3,0,15);
             console.log(`After adding: ${numArr}`);
             break;
+
+        case 'slice':
+            console.log(stringArr);
+            console.log(`Sliced from 1,3: ${stringArr.slice(1,3)}`);
+            break;
         
         case 'concat':
             // concat (array to be added) - joins two arrays into one
@@ -89,13 +94,36 @@ const sortFind = (operation) => {
             console.log(`First string > 4 characters? ${stringArr.find((e)=>e.length > 4)}`);
             console.log(`First string with a D inside? ${stringArr.find((e)=>e.includes('D'))}`)
             break;
-            
+
+        case 'sort':
+            console.log(numArr);
+            console.log(`Sorted: ${numArr.sort()}`);
+            console.log(stringArr);
+            console.log(`Sorted: ${stringArr.sort()}`);
+            break;
+        
+        case 'reverse':
+            console.log(stringArr);
+            console.log(`Reversed: ${stringArr.reverse()}`);
+            break;
+
+        default:
+            break;
+    }
+}
+
+const goodStuff = (operation) => {
+    console.log(operation);
+    switch (operation){
+        case 'flat':
+            break;
+
         default:
             break;
     }
 }
 
 
-
 // addRemove(method);
-sortFind(method);
+// sortFind(method);
+goodStuff(method);
