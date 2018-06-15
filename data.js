@@ -1,6 +1,6 @@
 module.exports = {
     stringArr: ['GriZ', 'Timecop 1983', 'Gunship', 'Duke Dumont', 'Holy Ghost'],
-    numArr: [2,7,3,0,9,15,187,512],
+    numArr: [2,7,3,0,9,15,187,512,9],
     objArr: [
         {
             title: 'Fifth Head of Cerberus', 

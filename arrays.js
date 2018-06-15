@@ -64,8 +64,38 @@ const addRemove = (operation) =>{
     }
 }
 
-// const 
+const sortFind = (operation) => {
+    console.log(operation);
+    switch (operation){
+        case 'includes':
+            console.log(numArr);
+            console.log(`Does numArr include 7? ${numArr.includes(7)}`);
+            console.log(`Does numArr include 18? ${numArr.includes(18)}`)
+            break;
+
+        case 'indexof':
+            console.log(stringArr);
+            console.log(`Index of Gunship: ${stringArr.indexOf('Gunship')}`);
+            console.log(`Index of Avicii: ${stringArr.indexOf('Avicii')}`);
+            break;
+
+        case 'lastindex':
+            console.log(numArr);
+            console.log(`Last index of 9: ${numArr.lastIndexOf(9)}`);
+            break;
+        
+        case 'find':
+            console.log(stringArr);
+            console.log(`First string > 4 characters? ${stringArr.find((e)=>e.length > 4)}`);
+            console.log(`First string with a D inside? ${stringArr.find((e)=>e.includes('D'))}`)
+            break;
+            
+        default:
+            break;
+    }
+}
 
 
 
-addRemove(method);
+// addRemove(method);
+sortFind(method);
